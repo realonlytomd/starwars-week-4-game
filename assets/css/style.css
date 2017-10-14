@@ -1,0 +1,48 @@
+body {
+	background-image: url("../images/star-wars-background.jpg");
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+h1 {
+	font-family: 'Play', sans-serif;
+	color: white;
+}
+
+h2 {
+	font-family: 'Play', sans-serif;
+	color: white;
+}
+
+.solid {
+	outline-style: solid;
+}
+
+/* class for image in available characters */
+.iconChar {
+	margin-right: 5px;
+    width: 140px;
+    height: 140px;
+    border: 10px solid white;
+    outline-color: green;
+
+    }
+
+/* add classes for images when they are in other divs, to change border and 
+outline colors */
+
+.iconEnemy {
+	margin-right: 5px;
+    width: 140px;
+    height: 140px;
+    border: 10px solid red;
+    outline-color: black;
+}
+
+.defender {
+	margin-right: 5px;
+    width: 140px;
+    height: 140px;
+    border: 10px solid black;
+    outline-color: green;
+}
