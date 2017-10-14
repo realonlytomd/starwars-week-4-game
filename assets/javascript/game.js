@@ -28,22 +28,24 @@ $(document).ready(function() {
 
 //	Each character in the game has 3 attributes: 
 //	`Health Points`, `Attack Power` and `Counter Attack Power`
+// these should be data-health, data-attack, data-counter.  can't make up attribute 
+//variables
 
-	starRey.attr("healthPoints", 150);
-	starRey.attr("attackPower", 20);
-	starRey.attr("counterAttack", 15);
+	starRey.attr("data-health", 150);
+	starRey.attr("data-attack", 20);
+	starRey.attr("data-counter", 15);
 
-	starTrooper.attr("healthPoints", 80);
-	starTrooper.attr("attackPower", 15);
-	starTrooper.attr("counterAttack", 10);
+	starTrooper.attr("data-health", 80);
+	starTrooper.attr("data-attack", 15);
+	starTrooper.attr("data-counter", 10);
 
-	starVader.attr("healthPoints", 160);
-	starVader.attr("attackPower", 25);
-	starVader.attr("counterAttack", 30);
+	starVader.attr("data-health", 160);
+	starVader.attr("data-attack", 25);
+	starVader.attr("data-counter", 30);
 
-	starYoda.attr("healthPoints", 200);
-	starYoda.attr("attackPower", 30);
-	starYoda.attr("counterAttack", 25);
+	starYoda.attr("data-health", 200);
+	starYoda.attr("data-attack", 30);
+	starYoda.attr("data-counter", 25);
 
 
 	$(".availableCharacters").append(starRey);
@@ -82,15 +84,15 @@ $(document).ready(function() {
 		//the ourHero health points go down by the counterAttack point of the defender
 		//and the defender's health points go down the the attack points of the hero.
 
-		//Important: the 2nd, 3rd, 4th time the attack button is clicked, the
+		//Important: the 2nd, 3rd, 4th time, etc., the attack button is clicked, the
 		//hero's attack points go up by the base factor, but the defender's stays
 		//the same.
 
 		//if the hero health points go below zero, game is over and a reset button appears
 		//clicking the reset button starts over the game.
 
-		//if the defender's health points go below zero, the that character goes away
-		//use clicks another of the enemy characters, and then repeat reassigning
+		//if the defender's health points go below zero, then that character goes away
+		//user clicks another of the enemy characters, and then repeat reassigning
 		//of classes, and change append to the defender div.
 
 		//continue until all enemies are vanquished!
